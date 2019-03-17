@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B401337E223F110B00A45815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401337D223F110B00A45815 /* AppDelegate.swift */; };
+		B4013380223F110B00A45815 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401337F223F110B00A45815 /* ViewController.swift */; };
+		B4013383223F110B00A45815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4013381223F110B00A45815 /* Main.storyboard */; };
+		B4013385223F110D00A45815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4013384223F110D00A45815 /* Assets.xcassets */; };
+		B4013388223F110D00A45815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4013386223F110D00A45815 /* LaunchScreen.storyboard */; };
+		B401338D223F110D00A45815 /* TravelAgency WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B401338C223F110D00A45815 /* TravelAgency WatchKit App.app */; };
+		B4013393223F110D00A45815 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4013391223F110D00A45815 /* Interface.storyboard */; };
+		B4013395223F110E00A45815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4013394223F110E00A45815 /* Assets.xcassets */; };
+		B401339C223F110E00A45815 /* TravelAgency WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B401339B223F110E00A45815 /* TravelAgency WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B40133A1223F110E00A45815 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40133A0223F110E00A45815 /* InterfaceController.swift */; };
+		B40133A3223F110E00A45815 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40133A2223F110E00A45815 /* ExtensionDelegate.swift */; };
+		B40133A5223F110E00A45815 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40133A4223F110E00A45815 /* NotificationController.swift */; };
+		B40133A7223F110F00A45815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B40133A6223F110F00A45815 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B401338E223F110D00A45815 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4013372223F110B00A45815 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B401338B223F110D00A45815;
+			remoteInfo = "TravelAgency WatchKit App";
+		};
+		B401339D223F110E00A45815 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4013372223F110B00A45815 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B401339A223F110E00A45815;
+			remoteInfo = "TravelAgency WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B40133AF223F110F00A45815 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B401339C223F110E00A45815 /* TravelAgency WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40133B3223F110F00A45815 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B401338D223F110D00A45815 /* TravelAgency WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B401337A223F110B00A45815 /* TravelAgency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelAgency.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B401337D223F110B00A45815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B401337F223F110B00A45815 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4013382223F110B00A45815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4013384223F110D00A45815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4013387223F110D00A45815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B4013389223F110D00A45815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B401338C223F110D00A45815 /* TravelAgency WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TravelAgency WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4013392223F110D00A45815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B4013394223F110E00A45815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4013396223F110E00A45815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B401339B223F110E00A45815 /* TravelAgency WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TravelAgency WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40133A0223F110E00A45815 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B40133A2223F110E00A45815 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B40133A4223F110E00A45815 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B40133A6223F110F00A45815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B40133A8223F110F00A45815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B40133A9223F110F00A45815 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4013377223F110B00A45815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4013398223F110E00A45815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4013371223F110B00A45815 = {
+			isa = PBXGroup;
+			children = (
+				B401337C223F110B00A45815 /* TravelAgency */,
+				B4013390223F110D00A45815 /* TravelAgency WatchKit App */,
+				B401339F223F110E00A45815 /* TravelAgency WatchKit Extension */,
+				B401337B223F110B00A45815 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B401337B223F110B00A45815 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B401337A223F110B00A45815 /* TravelAgency.app */,
+				B401338C223F110D00A45815 /* TravelAgency WatchKit App.app */,
+				B401339B223F110E00A45815 /* TravelAgency WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B401337C223F110B00A45815 /* TravelAgency */ = {
+			isa = PBXGroup;
+			children = (
+				B401337D223F110B00A45815 /* AppDelegate.swift */,
+				B401337F223F110B00A45815 /* ViewController.swift */,
+				B4013381223F110B00A45815 /* Main.storyboard */,
+				B4013384223F110D00A45815 /* Assets.xcassets */,
+				B4013386223F110D00A45815 /* LaunchScreen.storyboard */,
+				B4013389223F110D00A45815 /* Info.plist */,
+			);
+			path = TravelAgency;
+			sourceTree = "<group>";
+		};
+		B4013390223F110D00A45815 /* TravelAgency WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B4013391223F110D00A45815 /* Interface.storyboard */,
+				B4013394223F110E00A45815 /* Assets.xcassets */,
+				B4013396223F110E00A45815 /* Info.plist */,
+			);
+			path = "TravelAgency WatchKit App";
+			sourceTree = "<group>";
+		};
+		B401339F223F110E00A45815 /* TravelAgency WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B40133A0223F110E00A45815 /* InterfaceController.swift */,
+				B40133A2223F110E00A45815 /* ExtensionDelegate.swift */,
+				B40133A4223F110E00A45815 /* NotificationController.swift */,
+				B40133A6223F110F00A45815 /* Assets.xcassets */,
+				B40133A8223F110F00A45815 /* Info.plist */,
+				B40133A9223F110F00A45815 /* PushNotificationPayload.apns */,
+			);
+			path = "TravelAgency WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4013379223F110B00A45815 /* TravelAgency */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B40133B4223F110F00A45815 /* Build configuration list for PBXNativeTarget "TravelAgency" */;
+			buildPhases = (
+				B4013376223F110B00A45815 /* Sources */,
+				B4013377223F110B00A45815 /* Frameworks */,
+				B4013378223F110B00A45815 /* Resources */,
+				B40133B3223F110F00A45815 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B401338F223F110D00A45815 /* PBXTargetDependency */,
+			);
+			name = TravelAgency;
+			productName = TravelAgency;
+			productReference = B401337A223F110B00A45815 /* TravelAgency.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B401338B223F110D00A45815 /* TravelAgency WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B40133B0223F110F00A45815 /* Build configuration list for PBXNativeTarget "TravelAgency WatchKit App" */;
+			buildPhases = (
+				B401338A223F110D00A45815 /* Resources */,
+				B40133AF223F110F00A45815 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B401339E223F110E00A45815 /* PBXTargetDependency */,
+			);
+			name = "TravelAgency WatchKit App";
+			productName = "TravelAgency WatchKit App";
+			productReference = B401338C223F110D00A45815 /* TravelAgency WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B401339A223F110E00A45815 /* TravelAgency WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B40133AC223F110F00A45815 /* Build configuration list for PBXNativeTarget "TravelAgency WatchKit Extension" */;
+			buildPhases = (
+				B4013397223F110E00A45815 /* Sources */,
+				B4013398223F110E00A45815 /* Frameworks */,
+				B4013399223F110E00A45815 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TravelAgency WatchKit Extension";
+			productName = "TravelAgency WatchKit Extension";
+			productReference = B401339B223F110E00A45815 /* TravelAgency WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4013372223F110B00A45815 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "shivam gandhi";
+				TargetAttributes = {
+					B4013379223F110B00A45815 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B401338B223F110D00A45815 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B401339A223F110E00A45815 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = B4013375223F110B00A45815 /* Build configuration list for PBXProject "TravelAgency" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4013371223F110B00A45815;
+			productRefGroup = B401337B223F110B00A45815 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4013379223F110B00A45815 /* TravelAgency */,
+				B401338B223F110D00A45815 /* TravelAgency WatchKit App */,
+				B401339A223F110E00A45815 /* TravelAgency WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4013378223F110B00A45815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4013388223F110D00A45815 /* LaunchScreen.storyboard in Resources */,
+				B4013385223F110D00A45815 /* Assets.xcassets in Resources */,
+				B4013383223F110B00A45815 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B401338A223F110D00A45815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4013395223F110E00A45815 /* Assets.xcassets in Resources */,
+				B4013393223F110D00A45815 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4013399223F110E00A45815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40133A7223F110F00A45815 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4013376223F110B00A45815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4013380223F110B00A45815 /* ViewController.swift in Sources */,
+				B401337E223F110B00A45815 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4013397223F110E00A45815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40133A5223F110E00A45815 /* NotificationController.swift in Sources */,
+				B40133A3223F110E00A45815 /* ExtensionDelegate.swift in Sources */,
+				B40133A1223F110E00A45815 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B401338F223F110D00A45815 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B401338B223F110D00A45815 /* TravelAgency WatchKit App */;
+			targetProxy = B401338E223F110D00A45815 /* PBXContainerItemProxy */;
+		};
+		B401339E223F110E00A45815 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B401339A223F110E00A45815 /* TravelAgency WatchKit Extension */;
+			targetProxy = B401339D223F110E00A45815 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4013381223F110B00A45815 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4013382223F110B00A45815 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B4013386223F110D00A45815 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4013387223F110D00A45815 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B4013391223F110D00A45815 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4013392223F110D00A45815 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B40133AA223F110F00A45815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B40133AB223F110F00A45815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B40133AD223F110F00A45815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X39JA8H8R9;
+				INFOPLIST_FILE = "TravelAgency WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shivamGandhi.TravelAgency.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		B40133AE223F110F00A45815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X39JA8H8R9;
+				INFOPLIST_FILE = "TravelAgency WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shivamGandhi.TravelAgency.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		B40133B1223F110F00A45815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X39JA8H8R9;
+				IBSC_MODULE = TravelAgency_WatchKit_Extension;
+				INFOPLIST_FILE = "TravelAgency WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shivamGandhi.TravelAgency.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		B40133B2223F110F00A45815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X39JA8H8R9;
+				IBSC_MODULE = TravelAgency_WatchKit_Extension;
+				INFOPLIST_FILE = "TravelAgency WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shivamGandhi.TravelAgency.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		B40133B5223F110F00A45815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X39JA8H8R9;
+				INFOPLIST_FILE = TravelAgency/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shivamGandhi.TravelAgency;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B40133B6223F110F00A45815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X39JA8H8R9;
+				INFOPLIST_FILE = TravelAgency/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shivamGandhi.TravelAgency;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4013375223F110B00A45815 /* Build configuration list for PBXProject "TravelAgency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B40133AA223F110F00A45815 /* Debug */,
+				B40133AB223F110F00A45815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B40133AC223F110F00A45815 /* Build configuration list for PBXNativeTarget "TravelAgency WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B40133AD223F110F00A45815 /* Debug */,
+				B40133AE223F110F00A45815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B40133B0223F110F00A45815 /* Build configuration list for PBXNativeTarget "TravelAgency WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B40133B1223F110F00A45815 /* Debug */,
+				B40133B2223F110F00A45815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B40133B4223F110F00A45815 /* Build configuration list for PBXNativeTarget "TravelAgency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B40133B5223F110F00A45815 /* Debug */,
+				B40133B6223F110F00A45815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4013372223F110B00A45815 /* Project object */;
+}
