@@ -1,16 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch40" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TravelAgency_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Flight Detail" id="M8x-vM-IPy">
+                            <connections>
+                                <segue destination="2c7-fy-092" kind="push" id="DLV-Hr-Bgj"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Booked Flight" id="VXe-Uh-g6T">
+                            <connections>
+                                <segue destination="Sqx-u5-45O" kind="push" id="oaT-pd-riO"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Flight Detail-->
+        <scene sceneID="Yng-ok-5MG">
+            <objects>
+                <controller id="2c7-fy-092" customClass="FlightDetail" customModule="TravelAgency_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="KNx-JT-xgQ">
+                            <items>
+                                <tableRow identifier="cell" id="lBg-hB-dI1" customClass="DisplayRowController" customModule="TravelAgency_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="131" alignment="left" layout="vertical" id="GV6-DA-L2Y">
+                                        <items>
+                                            <label height="21" alignment="left" text="Date" textAlignment="center" minimumScaleFactor="0.0" id="NWa-5b-9PL" propertyAccessControl="none"/>
+                                            <group width="185" height="54" alignment="left" id="ZXA-zA-k5C">
+                                                <items>
+                                                    <label width="60" height="57" alignment="left" text="LAX" id="okH-Ge-BfB">
+                                                        <fontDescription key="font" type="system" weight="black" pointSize="22"/>
+                                                    </label>
+                                                    <label width="29" height="57" alignment="left" text="to" textAlignment="left" id="aqv-3c-atr"/>
+                                                    <label width="52" height="57" alignment="left" text="SFO" id="jrK-lH-WCk">
+                                                        <fontDescription key="font" type="system" weight="black" pointSize="22"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <group width="1" alignment="left" id="Fqu-Qz-5lq">
+                                                <items>
+                                                    <group width="69" height="48" alignment="left" layout="vertical" id="OIx-Rb-MHa">
+                                                        <items>
+                                                            <label width="64" height="15" alignment="left" text="Fare" textAlignment="center" id="NCU-Zd-pSj"/>
+                                                            <label width="64" height="26" alignment="left" text="0 $" textAlignment="center" id="3RF-i7-Hyk">
+                                                                <fontDescription key="font" type="system" pointSize="23"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                    <button width="76" height="46" alignment="left" title="Book" id="L3f-OY-Boz">
+                                                        <connections>
+                                                            <action selector="BookFlight" destination="lBg-hB-dI1" id="cln-5J-2DX"/>
+                                                        </connections>
+                                                    </button>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="bookButton" destination="L3f-OY-Boz" id="Nme-gK-QuU"/>
+                                        <outlet property="date" destination="NWa-5b-9PL" id="MAg-fu-LbH"/>
+                                        <outlet property="destination" destination="jrK-lH-WCk" id="LmA-tC-aRP"/>
+                                        <outlet property="fare" destination="3RF-i7-Hyk" id="4xj-dJ-nk6"/>
+                                        <outlet property="origin" destination="okH-Ge-BfB" id="SCs-br-mif"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="KNx-JT-xgQ" id="DGk-F9-787"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="467.60493827160496" y="73.781725888324871"/>
+        </scene>
+        <!--Booked Flight Interface Controller-->
+        <scene sceneID="W2i-hf-UQd">
+            <objects>
+                <controller id="Sqx-u5-45O" customClass="BookedFlightInterfaceController" customModule="TravelAgency_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="kdg-Mk-h6m">
+                            <items>
+                                <tableRow identifier="cell1" id="rXJ-o1-XJy" customClass="BookedRowController" customModule="TravelAgency_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="74" alignment="left" layout="vertical" id="vbs-k2-F2C">
+                                        <items>
+                                            <label height="21" alignment="left" text="Date" textAlignment="center" minimumScaleFactor="0.0" id="uxW-Sq-wkP" propertyAccessControl="none"/>
+                                            <group width="185" height="54" alignment="left" id="Fh3-tv-kDW">
+                                                <items>
+                                                    <label width="60" height="57" alignment="left" text="LAX" id="3S3-j2-yDm">
+                                                        <fontDescription key="font" type="system" weight="black" pointSize="22"/>
+                                                    </label>
+                                                    <label width="29" height="57" alignment="left" text="to" textAlignment="left" id="Wi8-qw-PIw"/>
+                                                    <label width="52" height="57" alignment="left" text="SFO" id="BEr-7N-1zQ">
+                                                        <fontDescription key="font" type="system" weight="black" pointSize="22"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="date" destination="uxW-Sq-wkP" id="T4u-Ne-kL5"/>
+                                        <outlet property="destination" destination="BEr-7N-1zQ" id="B6M-xq-OzS"/>
+                                        <outlet property="origin" destination="3S3-j2-yDm" id="3Tb-kk-0GE"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="kdg-Mk-h6m" id="Ydu-yc-fkE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="521" y="331"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -32,16 +148,20 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="TravelAgency_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="TravelAgency_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="2 Hours Remains. CHECK IN " numberOfLines="0" minimumScaleFactor="0.0" id="IYe-Z3-Xbn"/>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="468" y="987"/>
         </scene>
     </scenes>
 </document>
